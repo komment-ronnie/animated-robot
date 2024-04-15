@@ -18,7 +18,6 @@ public class PageInfo {
   private final int pageLimit;
   private final int totalPages;
   private final long totalElements;
-
   public static PageInfo of(Pageable pageable, Page<?> page) {
     return new PageInfo(
         pageable.getPageNumber(),
